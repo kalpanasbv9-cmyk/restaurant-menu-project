@@ -89,8 +89,6 @@ restaurant-Menu-Page/
     ├── dessert.jpg
     └── beverage.jpg
 
-*Note:* The image filenames shown above are examples. Replace them
-with the actual filenames used in your project.
 
 ## 🚀 How to Run the Project
 
@@ -105,7 +103,7 @@ Follow these steps to run the Restaurant Menu Page:
 7. Click the "Add to Order" buttons to test the item counter.
 
 *Requirements:* A modern web browser such as Google Chrome,
-Microsoft Edge, or Mozilla Firefox.
+Microsoft Edge, or Mozilla Firefox
 
 No additional frameworks or libraries are required.
 
@@ -133,8 +131,6 @@ of the project.
 | Aman Kumar Barnwal | CSS styling and Flexbox layout |
 | Parth Gupta        | JavaScript functionality and testing |
 
-*Note:* The contribution details above are suggested examples.
-Update them according to the actual work performed by each member.
 
 ## 🔗 GitHub Repository
 
