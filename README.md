@@ -73,12 +73,15 @@ DOM manipulation, and JavaScript event handling.
 
 ## 📂 Project Structure
 
-Restaurant-Menu-Page/
+restaurant-Menu-Page/
 │
-├── index.html
+├── README.md
+├── r-menu.html
+├── menu.html
+├── about.html  
+├── contact.html
 ├── style.css
 ├── script.js
-├── README.md
 │
 └── images/
     ├── starter.jpg
