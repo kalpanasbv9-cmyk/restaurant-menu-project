@@ -136,7 +136,7 @@ of the project.
 
 *Repository Name:* Restaurant-Menu-Page
 
-*Repository Link:* https://github.com/kalpanasbv9-cmyk/restaurant-menu-project.git.
+*Repository Link:* https://github.com/kalpanasbv9-cmyk/restaurant-menu-project
 
 ## 🔮 Future Improvements
 
