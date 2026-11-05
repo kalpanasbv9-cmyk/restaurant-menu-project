@@ -6,38 +6,73 @@
 
 body{
     font-family:"segoe UI",Arial, sans-serif;
-    background-color:#f5e8e3;
-    color:black;
+    background-color:white;
+    color:#462010;
     line-height: 1.5;
+
+
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-position: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
 }
 
 header{
-    background-color:white;
-    color:#3d1d10;
+    color:white;
+    margin-top:10px;
     text-align: center;
-    padding: 30px 15px;
-    border-bottom: 5px solid #5d3320;
 }
 header h1{
     font-size: 38px;
     margin:0 0 12px;
     letter-spacing: 1px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+
 }
 
 header p{
     font-size:18px;
     margin:10px 0 22px;
+    text-align: center;
+    margin-top: 20 px;
 
 }
 .order-box {
+    background-color: white;
     margin-top: 15px;
     display:inline-block;
-    background-color:#d5b4a5;
-    color:#592e1b;
-    border: 2px solid #462010;
+    color:black;
+    border: 2px solid black;
     padding: 8px 18px;
     border-radius: 10px;
     font-weight:bold;
+    margin-bottom: 30px ;
 }
 main{
     max-width: 1500px;
@@ -51,36 +86,88 @@ main>h2 {
     margin-bottom:30px ;
 }
 
+
 .navbar {
     display:flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     padding:10px;
-    flex-wrap:wrap;
-    gap:40px;
-    margin-bottom: 15px;
+    gap: 40px;
+    margin-bottom: 20px;
+    border: white;
     
 }
 .navbar a {
-    background-color: #562f1f;
-    color:#f4f1ef;
+    background-color: white;
+    color:black;
     text-decoration:solid;
     font-weight:bold;
-    font-size: 20px;
+    font-size: 25px;
     transition: transform 0.3s, box-shadow 0.3s;
     box-sizing: border-box;
+    border:2px solid black;
     padding:5px 10px;
-    border: 3px solid #3d1d10;
     border-radius: 5px;
 }
 .navbar a:hover,
 .navbar a.active {
-    color: #aa7258;
+    color:rgb(42, 41, 41);
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(139, 46, 22, 0.2);
+    box-shadow: 0 8px 20px rgba(227, 154, 136, 0.2);
 }
 
+.about-container {
+    max-width:1000px;
+    margin:35px;
+    padding:20px;
+    background-color: white;
+}
+.about-content{
+    background-color:white;
+    padding:35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px;
+}
+.about-content h1{
+    color: #562f1f;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
 
+.about-content h2{
+    color: #562f1f;
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+}
+
+.about-content p{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.about-content ul{
+    list-style: none;
+    padding:0;
+}
+
+.about-content li{
+    margin:10px 0;
+    font-size: 16px;
+}
+
+.contact-container h2{
+    text-align: left;
+    color: #462010;
+}
+
+footer{
+    background-color: #cca491;
+    color: #562f1f;
+    text-align: center;
+    padding:18px;
+    margin-top: 30px;
+}
 .filter-buttons{
     display:flex;
     justify-content:center;
