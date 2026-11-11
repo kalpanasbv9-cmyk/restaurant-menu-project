@@ -127,8 +127,9 @@ of the project.
 
 | Group Member       | Contribution |
 |--------------------|--------------|
-| Kalpana Kumari     | HTML structure and menu categories |
-| Aman Kumar Barnwal | CSS styling and Flexbox layout |
+| 
+| Aman Kumar Barnwal | HTML structure and menu categories |
+| Kalpana Kumari | CSS styling and Flexbox layout |
 | Parth Gupta        | JavaScript functionality and testing |
 
 
