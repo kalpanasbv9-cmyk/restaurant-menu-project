@@ -550,3 +550,218 @@ header {
         font-size: 28px;
     }
 }
+/* CONTACT PAGE */
+
+/* ===== NEW CONTACT PAGE DESIGN ===== */
+
+.contact-page {
+    background: #fff8ed;
+    padding: 45px 5%;
+}
+
+/* Main showcase */
+
+.contact-showcase {
+    max-width: 1250px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Restaurant image */
+
+.contact-image {
+    min-height: 570px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(5, 20, 38, 0.95),
+        rgba(5, 20, 38, 0.05)
+    ),
+    url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0")
+    center/cover no-repeat;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+    right: 25px;
+    color: white;
+}
+
+.image-overlay span {
+    color: #e8bd69;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.image-overlay h2 {
+    font-size: 38px;
+    line-height: 1.3;
+    margin: 15px 0;
+}
+
+.image-overlay p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Contact information */
+
+.contact-information {
+    padding: 20px 10px;
+}
+
+.contact-information > h2 {
+    color: #17212b;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.contact-intro {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* Individual information rows */
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddcda9;
+    transition: 0.3s;
+}
+
+.info-row:hover {
+    padding-left: 10px;
+}
+
+.info-icon {
+    min-width: 55px;
+    height: 55px;
+    background: #17212b;
+    color: #e8bd69;
+    border: 2px solid #e8bd69;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.info-row h3 {
+    color: #17212b;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.info-row p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Location button */
+
+.location-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 25px;
+    background: #17212b;
+    color: #e8bd69;
+    border: 1px solid #e8bd69;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.location-btn:hover {
+    background: #e8bd69;
+    color: #17212b;
+    transform: translateY(-3px);
+}
+
+/* Bottom message */
+
+.contact-message {
+    max-width: 1000px;
+    margin: 65px auto 20px;
+    text-align: center;
+    padding: 45px 20px;
+    background: #17212b;
+    color: white;
+    border-radius: 18px;
+}
+
+.contact-message span {
+    color: #e8bd69;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contact-message h2 {
+    color: #e8bd69;
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.contact-message p {
+    color: #eee;
+    line-height: 1.7;
+}
+
+/* Responsive design */
+
+@media (max-width: 850px) {
+
+    .contact-showcase {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-image {
+        min-height: 400px;
+    }
+
+    .contact-information {
+        padding: 20px 5px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contact-image {
+        min-height: 330px;
+    }
+
+    .image-overlay h2 {
+        font-size: 28px;
+    }
+
+    .contact-information > h2 {
+        font-size: 29px;
+    }
+
+    .contact-message h2 {
+        font-size: 25px;
+    }
+
+}
