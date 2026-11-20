@@ -39,23 +39,61 @@ header {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
     list-style: none;
+    margin: 0;
+    padding: 0;display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
     font-size: 13px;
-    padding: 15px;
-    display: block;
-    transition: 0.3s;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 16px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+
+    white-space: nowrap;
+    transition: all 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links .active {
-    background-color: #c7a45c;
+.nav-links a:hover {
     color: #17212b;
+    background-color: #e5bd69;
+    border-color: #e5bd69;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(229, 189, 105, 0.2);
+}
+
+.nav-links a.active {
+    color: #e5bd69;
+    border-color: #e5bd69;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+        padding: 9px 12px;
+    }
 }
 
 .nav-box {
@@ -336,65 +374,146 @@ header {
 .menu-section {
     width: 100%;
     min-width: 0;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .menu-section h2 {
-    color: #17212b;
+   color: #17212b;
+    font-size: 25px;
     font-weight: 700;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
     border-bottom: 3px solid #562f1f;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     text-align: left;
 }
 
+
+/* PREMIUM FOOD MENU CARDS */
+
 .menu-container {
-    display:grid;
-    /* EXACTLY 4 COLUMNS ON LARGE SCREENS */
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    padding: 10px;
-    width:90%;
-    gap: 25px;
-    margin:auto
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 90%;
+    max-width: 1250px;
+    margin: 30px auto;
+    padding: 15px;
+    gap: 28px;
+    box-sizing: border-box;
 }
 
-/* FOOD CARD */
-
 .food-card {
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid #6d4636;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-    width: 95%;
+    width: 100%;
     min-width: 0;
-
     box-sizing: border-box;
+
+    background: #fffaf3;
+    border: 1px solid #ead9c5;
+    border-radius: 18px;
     overflow: hidden;
-    padding:12px;
-    transition: transform 0.3s, box-shadow 0.3s;
+
+    box-shadow: 0 5px 18px rgba(50, 30, 15, 0.09);
+
+    transition: all 0.35s ease;
 }
 
 .food-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(139, 46, 22, 0.2);
+    transform: translateY(-9px);
+    box-shadow: 0 15px 30px rgba(50, 30, 15, 0.18);
+    border-color: #c7a45c;
 }
 
-
-/* =========================================
-   FOOD IMAGES
-========================================= */
+/* FOOD IMAGE */
 
 .food-card img {
+    width: 100%;
+    object-fit: cover;
     display: block;
-    width:100%;
 
-    /* SHOW COMPLETE IMAGE WITHOUT CROPPING */
-
-    object-fit: contain;
-    object-position: center;
-    background-color: white;
-    border-radius: 3px;
+    transition: transform 0.5s ease;
 }
+
+.food-card:hover img {
+    transform: scale(1.06);
+}
+
+/* FOOD TITLE */
+
+.food-card h3 {
+    color: #362016;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 16px 15px 8px;
+}
+
+/* FOOD DESCRIPTION */
+
+.food-card p {
+    color: #78685c;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0 15px 12px;
+}
+
+/* FOOD PRICE */
+
+.food-card .price {
+    color: #986b20;
+    font-size: 21px;
+    font-weight: 800;
+    margin: 5px 15px 12px;
+}
+
+/* ADD TO CART */
+
+.food-card .add-btn {
+    margin: auto 15px 15px;
+    width: calc(100% - 30px);
+    padding: 13px;
+    background: #653e2e;
+    color: white;
+    border: 1px solid #653e2e;
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.food-card .add-btn:hover {
+    background: #c7a45c;
+    color: #17212b;
+    border-color: #c7a45c;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .menu-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .food-card img {
+        height: 220px;
+    }
+}
+
+
 /* =========================================
    FOOD GRID
 ========================================= */
