@@ -353,7 +353,10 @@ header {
     top:30px;
     left:60px;
 }
-
+#menu {
+    width:100%;
+    text-align: center;
+}
 #menu h1 {
     color: #a58b5a;
     font-size: clamp(42px, 5vw, 68px);
@@ -369,8 +372,28 @@ header {
     color: #17212b;
     font-weight: 800;
     font-size: 50px;
-
 }
+#menu .filter-box {
+    background-color:#17212b;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:15px solid #17212b;
+    font-size: 25px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap:40px;
+    box-sizing: border-box;
+}
+
+#menu.filter{
+    margin:0;
+    padding: 25px 35px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 .menu-section {
     width: 100%;
     min-width: 0;
@@ -379,10 +402,10 @@ header {
 
 .menu-section h2 {
    color: #17212b;
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 750;
     margin-bottom: 22px;
-    border-bottom: 3px solid #562f1f;
+    border-bottom: 3px solid #17212b;
     padding-bottom: 12px;
     text-align: left;
 }
@@ -395,9 +418,9 @@ header {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     width: 90%;
     max-width: 1250px;
-    margin: 30px auto;
-    padding: 15px;
-    gap: 28px;
+    margin: 20px;
+    padding: 35px;
+    gap:50px;
     box-sizing: border-box;
 }
 
@@ -411,7 +434,7 @@ header {
     box-sizing: border-box;
 
     background: #fffaf3;
-    border: 1px solid #ead9c5;
+    border: 2px solid  #9f8668;
     border-radius: 18px;
     overflow: hidden;
 
@@ -524,7 +547,7 @@ header {
     display: inline-block;
     color: black;
     border: 2px solid black;
-    padding: 8px 18px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-weight: bold;
     margin-bottom: 30px;
