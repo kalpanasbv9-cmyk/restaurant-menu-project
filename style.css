@@ -22,6 +22,7 @@ header {
 .navbar {
     min-height: 85px;
     padding: 15px 7%;
+    border:25px solid;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,7 +31,7 @@ header {
 
 .logo {
     color: #e5bd69;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
     white-space: nowrap;
@@ -42,20 +43,13 @@ header {
     justify-content: center;
     gap: 8px;
     list-style: none;
-    margin: 0;
     padding: 0;display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.4px;
 
@@ -80,18 +74,18 @@ header {
 }
 
 .nav-links a.active {
-    color: #e5bd69;
+    color:wheat;
     border-color: #e5bd69;
 }
 
 @media screen and (max-width: 768px) {
     .nav-links {
-        gap: 4px;
+        gap: 5px;
         flex-wrap: wrap;
     }
 
     .nav-links a {
-        font-size: 12px;
+        font-size: 15px;
         padding: 9px 12px;
     }
 }
@@ -186,9 +180,6 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
     transition: 0.3s;
-}
-
-.primary-btn {
     background-color: #17212b;
     color: white;
     border: 1px solid #17212b;
@@ -202,7 +193,7 @@ header {
 
 /* FEATURES */
 
-.features {
+.hero-content .features {
     display: flex;
     gap: 55px;
     margin-top: 55px;
@@ -217,7 +208,7 @@ header {
 
 .features p {
     font-size: 12px;
-    color: #62676c;
+    color:#17212b;
 }
 
 
@@ -379,19 +370,12 @@ header {
     display:flex;
     justify-content: center;
     align-items: center;
-    border:15px solid #17212b;
-    font-size: 25px;
+    border:25px solid #17212b;
+    font-size: 23px;
     flex-wrap: wrap;
     margin: 20px 0;
     gap:40px;
-    box-sizing: border-box;
-}
 
-#menu.filter{
-    margin:0;
-    padding: 25px 35px;
-    font-weight: 600;
-    cursor: pointer;
 }
 
 .menu-section {
@@ -421,25 +405,18 @@ header {
     margin: 20px;
     padding: 35px;
     gap:50px;
-    box-sizing: border-box;
 }
 
 .food-card {
-    position: relative;
     display: flex;
     flex-direction: column;
-
     width: 100%;
     min-width: 0;
-    box-sizing: border-box;
-
     background: #fffaf3;
     border: 2px solid  #9f8668;
     border-radius: 18px;
     overflow: hidden;
-
     box-shadow: 0 5px 18px rgba(50, 30, 15, 0.09);
-
     transition: all 0.35s ease;
 }
 
@@ -515,9 +492,8 @@ header {
     border-color: #c7a45c;
 }
 
-/* TABLET */
-
-@media (max-width: 900px) {
+/* Half-screen and medium screens */
+@media (max-width: 1100px) {
     .menu-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -534,23 +510,6 @@ header {
     .food-card img {
         height: 220px;
     }
-}
-
-
-/* =========================================
-   FOOD GRID
-========================================= */
-
-.order-box {
-    background-color: white;
-    margin-top: 15px;
-    display: inline-block;
-    color: black;
-    border: 2px solid black;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    margin-bottom: 30px;
 }
 
 /* ABOUT PAGE */
@@ -624,11 +583,9 @@ header {
 }
 
 .mission-vision {
-    display:flex;
-    justify-content: center;
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    align-items: center;
     padding: 10px;
 }
 
@@ -660,13 +617,13 @@ header {
     margin: 60px 0 30px;
 }
 
-.features {
+.why-us .features {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
 
-.features div {
+.why-us .features div {
     background: #17212b;
     color: white;
     text-align: center;
@@ -938,19 +895,5 @@ header {
     .hero-visual {
         width: 100%;
         margin-top: 20px;
-    }
-}
-
-/* Half-screen and medium screens */
-@media (max-width: 1100px) {
-    .menu-container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-/* Mobile screens */
-@media (max-width: 600px) {
-    .menu-container {
-        grid-template-columns: 1fr;
     }
 }
