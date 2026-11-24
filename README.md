@@ -18,7 +18,7 @@
 ## 📝 Project Description
 
 The Restaurant Menu Page is a simple and attractive digital menu
-card developed using HTML, CSS, and JavaScript.
+card developed using HTML, CSS.
 
 It displays different food items in categorized sections, along with
 their descriptions, prices, and images. Users can filter menu items
@@ -26,16 +26,15 @@ by category and add items to their order using interactive buttons.
 
 The main objective of this project is to learn the fundamentals of
 web development, including webpage structure, styling, Flexbox layout,
-DOM manipulation, and JavaScript event handling.
+DOM manipulation.
 
 ## 🎯 Project Objectives
 
 - Create an attractive and user-friendly restaurant menu.
 - Display food items with names, descriptions, prices, and images.
 - Organize menu items into different categories.
-- Implement category filter buttons using JavaScript.
 - Add an interactive "Add to Order" feature.
-- Practice HTML, CSS, and basic JavaScript.
+- Practice HTML.
 
 ## ✨ Features Implemented
 
@@ -130,7 +129,7 @@ of the project.
 | 
 | Aman Kumar Barnwal | HTML structure and menu categories |
 | Kalpana Kumari | CSS styling and Flexbox layout |
-| Parth Gupta        | JavaScript functionality and testing |
+| Parth Gupta        | CSS and testing |
 
 
 ## 🔗 GitHub Repository
@@ -151,7 +150,7 @@ of the project.
 ## ✅ Conclusion
 
 The Restaurant Menu Page project demonstrates the basic concepts
-of HTML, CSS, and JavaScript through a practical web development
+of HTML, CSS, through a practical web development
 application.
 
 It provides an interactive digital menu where users can explore
@@ -165,4 +164,5 @@ development, DOM manipulation, Flexbox, and GitHub version control.
 
 *Project:* Restaurant Menu Page  
 *Group:* Group 2  
-*Technologies:* HTML5, CSS3, JavaScript
+*Technologies:* HTML5, CSS3, 
+functionality
